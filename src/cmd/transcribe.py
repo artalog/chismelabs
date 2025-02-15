@@ -8,11 +8,6 @@ from openai import OpenAI
 from io import BytesIO
 
 
-def _get_transcription_path(image_path):
-    transcription_path = os.path.join(dir_name, image_name + ".txt")
-    return transcription_path, image_name
-
-
 @dataclass(frozen=True)
 class PhotoTranscription:
     image_path: str
